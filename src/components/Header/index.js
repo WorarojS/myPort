@@ -1,7 +1,7 @@
 import React from "react"
 import { Container } from "reactstrap"
 import { Section, Flex, DivWrapper } from "../index"
-import { Head, Nav } from "./styled"
+import { Nav } from "./styled"
 import { navBar } from "../../util"
 import { LottieArt } from "../../assets"
 import Lottie from "react-lottie"
@@ -20,8 +20,7 @@ const Header = () => {
               {/* <Head>WORAROJ SURUXRUTTANASKUL</Head> */}
               <Lottie options={defaultOptions} width='280px' />
             </DivWrapper>
-
-            <Flex grow='1' justifyContent='flex-end'>
+            <Flex className='home-hide' grow='1' justifyContent='flex-end'>
               {navBar.map((data, index) => (
                 <Nav key={index} to={data}>
                   {data}

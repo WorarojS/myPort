@@ -4,6 +4,7 @@ import { FlexStyled } from "./styled"
 const Flex = props => {
   const {
     children,
+    className,
     flexDirection,
     justifyContent,
     alignItems,
@@ -17,6 +18,7 @@ const Flex = props => {
   } = props
   return (
     <FlexStyled
+      className={className}
       flexDirection={flexDirection}
       justifyContent={justifyContent}
       alignItems={alignItems}

@@ -12,4 +12,12 @@ export const FlexStyled = styled.div`
   margin: ${props => props.margin};
   background-color: ${props => props.bgColor};
   flex-grow: ${props => props.grow};
+  @media only screen and (max-width: 992px) {
+    &.responsive-flex {
+      width: 90%;
+    }
+    &.home-hide {
+      display: none;
+    }
+  }
 `

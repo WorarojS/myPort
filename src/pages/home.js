@@ -1,16 +1,8 @@
 import React from "react"
 import { Container } from "reactstrap"
-import {
-  Section,
-  Flex,
-  Text,
-  Button,
-  SocialBar,
-  DivWrapper
-} from "../components"
+import { Section, Flex, Text, Button, SocialBar } from "../components"
 import { LottieArt } from "../assets"
 import Lottie from "react-lottie"
-
 const Home = () => {
   const lottie = {
     loop: true,
@@ -22,11 +14,21 @@ const Home = () => {
       <Section bg='linear-gradient(to right,#F09819,#EDDE5D)'>
         <Container>
           <Flex height='calc(100vh - 6em)' justifyContent='flex-start'>
-            <Flex width='50%' flexDirection='column' alignItems='flex-start'>
+            <Flex
+              className='responsive-flex'
+              width='50%'
+              flexDirection='column'
+              alignItems='flex-start'
+            >
               <Text.H1 margin='0.2em 0' weight='300' space='0.3em'>
                 CHIN・SU
               </Text.H1>
-              <Text.H4 margin='0.2em 0' weight='700' space='0.5em'>
+              <Text.H4
+                className='home-position'
+                margin='0.2em 0'
+                weight='700'
+                space='0.5em'
+              >
                 FRONTEND DEVELOPER
               </Text.H4>
               <Text.H6 margin='0.5em 0' space='0.2em'>
@@ -44,10 +46,10 @@ const Home = () => {
                 About Me
               </Button>
             </Flex>
-            <Flex width='50%'>
+            <Flex className='home-hide' width='50%'>
               <Lottie options={lottie} width='70%' />
-              <SocialBar />
             </Flex>
+            <SocialBar />
           </Flex>
         </Container>
       </Section>

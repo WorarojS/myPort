@@ -20,21 +20,36 @@ const Home = () => {
               flexDirection='column'
               alignItems='flex-start'
             >
-              <Text.H1 margin='0.2em 0' weight='300' space='0.3em'>
+              <Text.H1
+                aos='fade-right'
+                aosDuration='1300'
+                margin='0.2em 0'
+                weight='300'
+                space='0.3em'
+              >
                 CHIN・SU
               </Text.H1>
               <Text.H4
                 className='home-position'
+                aos='fade-right'
+                aosDuration='1600'
                 margin='0.2em 0'
                 weight='700'
                 space='0.5em'
               >
                 FRONTEND DEVELOPER
               </Text.H4>
-              <Text.H6 margin='0.5em 0' space='0.2em'>
+              <Text.H6
+                aos='fade-right'
+                aosDuration='1900'
+                margin='0.5em 0'
+                space='0.2em'
+              >
                 at Nellika Co ・ Vancouver | Bangkok
               </Text.H6>
               <Button
+                aos='fade-right'
+                aosDuration='2100'
                 border='1px solid white'
                 bgColor='rgb(0,0,0,0)'
                 fontcolor='white'

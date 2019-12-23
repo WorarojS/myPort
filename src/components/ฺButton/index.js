@@ -4,6 +4,8 @@ import { ButtonStyled } from "./styled"
 const Button = props => {
   const {
     children,
+    aos,
+    aosDuration,
     margin,
     padding,
     bgColor,
@@ -16,6 +18,8 @@ const Button = props => {
   } = props
   return (
     <ButtonStyled
+      data-aos={aos}
+      data-aos-duration={aosDuration}
       margin={margin}
       padding={padding}
       bgColor={bgColor}

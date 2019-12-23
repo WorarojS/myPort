@@ -1,13 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Comfortaa:300,400,500,600,700|Raleway:300,400,500,600,700,800&display=swap");
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Raleway", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* font-family: 'Abril Fatface', cursive;
+  font-family: 'Comfortaa', cursive;
+  font-family: 'Raleway', sans-serif; */
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }

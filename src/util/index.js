@@ -1,3 +1,3 @@
 import { navBar } from "./navBar"
-
-export { navBar }
+import { socialBar } from "./socialBar"
+export { navBar, socialBar }

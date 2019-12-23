@@ -3,6 +3,7 @@ import * as Scroll from "react-scroll"
 const LinkStyle = Scroll.Link
 
 export const TextH1Style = styled.h1`
+  margin: ${props => props.margin};
   font-size: 3.5em;
   text-align: ${props => props.align};
   font-weight: ${props => props.weight};
@@ -15,6 +16,7 @@ export const TextH1Style = styled.h1`
   }
 `
 export const TextH2Style = styled.h2`
+  margin: ${props => props.margin};
   font-size: 2.8em;
   text-align: ${props => props.align};
   font-weight: ${props => props.weight};
@@ -26,6 +28,7 @@ export const TextH2Style = styled.h2`
   }
 `
 export const TextH3Style = styled.h3`
+  margin: ${props => props.margin};
   font-size: 2.5em;
   text-align: ${props => props.align};
   font-weight: ${props => props.weight};
@@ -37,6 +40,7 @@ export const TextH3Style = styled.h3`
   }
 `
 export const TextH4Style = styled.h4`
+  margin: ${props => props.margin};
   font-size: 1.6em;
   text-align: ${props => props.align};
   font-weight: ${props => props.weight};
@@ -48,6 +52,7 @@ export const TextH4Style = styled.h4`
   }
 `
 export const TextH5Style = styled.h5`
+  margin: ${props => props.margin};
   font-size: 1.3em;
   text-align: ${props => props.align};
   font-weight: ${props => props.weight};
@@ -60,6 +65,7 @@ export const TextH5Style = styled.h5`
   }
 `
 export const TextH6Style = styled.h6`
+  margin: ${props => props.margin};
   font-size: 0.9em;
   text-align: ${props => props.align};
   font-weight: ${props => props.weight};

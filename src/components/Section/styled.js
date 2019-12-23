@@ -6,5 +6,5 @@ export const SectionStyled = styled.section`
   left: ${props => props.left};
   right: ${props => props.right};
   bottom: ${props => props.bottom};
-  background-color: ${props => props.bgColor};
+  background: ${props => props.bg};
 `

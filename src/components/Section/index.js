@@ -2,16 +2,7 @@ import React from "react"
 import { SectionStyled } from "./styled"
 
 const Section = props => {
-  const {
-    children,
-    position,
-    top,
-    left,
-    right,
-    bottom,
-    bgColor,
-    minHeight
-  } = props
+  const { children, position, top, left, right, bottom, bg, minHeight } = props
   return (
     <SectionStyled
       position={position}
@@ -19,7 +10,7 @@ const Section = props => {
       left={left}
       right={right}
       bottom={bottom}
-      bgColor={bgColor}
+      bg={bg}
       minHeight={minHeight}
     >
       {children}

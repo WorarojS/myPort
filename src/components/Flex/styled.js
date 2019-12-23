@@ -5,6 +5,7 @@ export const FlexStyled = styled.div`
   flex-direction: ${props => props.flexDirection};
   justify-content: ${props => props.justifyContent};
   align-items: ${props => props.alignItems};
+  height: ${props => props.height};
   min-height: ${props => props.minHeight};
   width: ${props => props.width};
   padding: ${props => props.padding};

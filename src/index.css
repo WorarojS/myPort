@@ -1,9 +1,12 @@
-@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Comfortaa|Raleway:300,400,500,600,700,800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Comfortaa:300,400,500,600,700|Raleway:300,400,500,600,700,800&display=swap");
 body {
   margin: 0;
   font-family: "Raleway", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* font-family: 'Abril Fatface', cursive;
+  font-family: 'Comfortaa', cursive;
+  font-family: 'Raleway', sans-serif; */
 }
 
 code {

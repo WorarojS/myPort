@@ -7,6 +7,7 @@ const Flex = props => {
     flexDirection,
     justifyContent,
     alignItems,
+    height,
     minHeight,
     margin,
     padding,
@@ -19,6 +20,7 @@ const Flex = props => {
       flexDirection={flexDirection}
       justifyContent={justifyContent}
       alignItems={alignItems}
+      height={height}
       minHeight={minHeight}
       margin={margin}
       padding={padding}

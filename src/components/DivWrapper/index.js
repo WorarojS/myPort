@@ -2,9 +2,15 @@ import React from "react"
 import { DivStyled } from "./styled"
 
 const DivWrapper = props => {
-  const { children, margin, float } = props
+  const { children, margin, float, width, height, position } = props
   return (
-    <DivStyled margin={margin} float={float}>
+    <DivStyled
+      position={position}
+      margin={margin}
+      width={width}
+      height={height}
+      float={float}
+    >
       {children}
     </DivStyled>
   )

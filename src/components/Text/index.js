@@ -14,6 +14,7 @@ const H1Style = props => {
   const {
     className,
     id,
+    margin,
     fontcolor,
     weight,
     align,
@@ -26,6 +27,7 @@ const H1Style = props => {
     <TextH1Style
       className={className}
       id={id}
+      margin={margin}
       fontcolor={fontcolor}
       weight={weight}
       align={align}
@@ -43,6 +45,7 @@ const H2Style = props => {
   const {
     className,
     id,
+    margin,
     fontcolor,
     weight,
     align,
@@ -55,6 +58,7 @@ const H2Style = props => {
     <TextH2Style
       className={className}
       id={id}
+      margin={margin}
       fontcolor={fontcolor}
       weight={weight}
       align={align}
@@ -72,6 +76,7 @@ const H3Style = props => {
   const {
     className,
     id,
+    margin,
     fontcolor,
     weight,
     align,
@@ -84,6 +89,7 @@ const H3Style = props => {
     <TextH3Style
       className={className}
       id={id}
+      margin={margin}
       fontcolor={fontcolor}
       weight={weight}
       align={align}
@@ -100,6 +106,7 @@ const H4Style = props => {
   const {
     className,
     id,
+    margin,
     fontcolor,
     weight,
     align,
@@ -112,6 +119,7 @@ const H4Style = props => {
     <TextH4Style
       className={className}
       id={id}
+      margin={margin}
       fontcolor={fontcolor}
       weight={weight}
       align={align}
@@ -128,6 +136,7 @@ const H5Style = props => {
   const {
     className,
     id,
+    margin,
     fontcolor,
     weight,
     align,
@@ -140,6 +149,7 @@ const H5Style = props => {
     <TextH5Style
       className={className}
       id={id}
+      margin={margin}
       fontcolor={fontcolor}
       weight={weight}
       align={align}
@@ -156,6 +166,7 @@ const H6Style = props => {
   const {
     className,
     id,
+    margin,
     fontcolor,
     weight,
     align,
@@ -168,6 +179,7 @@ const H6Style = props => {
     <TextH6Style
       className={className}
       id={id}
+      margin={margin}
       fontcolor={fontcolor}
       weight={weight}
       align={align}

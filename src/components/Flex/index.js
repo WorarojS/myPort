@@ -5,6 +5,8 @@ const Flex = props => {
   const {
     children,
     className,
+    aos,
+    aosDuration,
     flexDirection,
     justifyContent,
     alignItems,
@@ -18,6 +20,8 @@ const Flex = props => {
   } = props
   return (
     <FlexStyled
+      data-aos={aos}
+      data-aos-duration={aosDuration}
       className={className}
       flexDirection={flexDirection}
       justifyContent={justifyContent}

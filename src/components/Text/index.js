@@ -14,6 +14,8 @@ const H1Style = props => {
   const {
     className,
     id,
+    aos,
+    aosDuration,
     margin,
     fontcolor,
     weight,
@@ -25,6 +27,8 @@ const H1Style = props => {
   } = props
   return (
     <TextH1Style
+      data-aos={aos}
+      data-aos-duration={aosDuration}
       className={className}
       id={id}
       margin={margin}
@@ -45,6 +49,8 @@ const H2Style = props => {
   const {
     className,
     id,
+    aos,
+    aosDuration,
     margin,
     fontcolor,
     weight,
@@ -56,6 +62,8 @@ const H2Style = props => {
   } = props
   return (
     <TextH2Style
+      data-aos={aos}
+      data-aos-duration={aosDuration}
       className={className}
       id={id}
       margin={margin}
@@ -76,6 +84,8 @@ const H3Style = props => {
   const {
     className,
     id,
+    aos,
+    aosDuration,
     margin,
     fontcolor,
     weight,
@@ -87,6 +97,8 @@ const H3Style = props => {
   } = props
   return (
     <TextH3Style
+      data-aos={aos}
+      data-aos-duration={aosDuration}
       className={className}
       id={id}
       margin={margin}
@@ -106,6 +118,8 @@ const H4Style = props => {
   const {
     className,
     id,
+    aos,
+    aosDuration,
     margin,
     fontcolor,
     weight,
@@ -117,6 +131,8 @@ const H4Style = props => {
   } = props
   return (
     <TextH4Style
+      data-aos={aos}
+      data-aos-duration={aosDuration}
       className={className}
       id={id}
       margin={margin}
@@ -136,6 +152,8 @@ const H5Style = props => {
   const {
     className,
     id,
+    aos,
+    aosDuration,
     margin,
     fontcolor,
     weight,
@@ -147,6 +165,8 @@ const H5Style = props => {
   } = props
   return (
     <TextH5Style
+      data-aos={aos}
+      data-aos-duration={aosDuration}
       className={className}
       id={id}
       margin={margin}
@@ -166,6 +186,8 @@ const H6Style = props => {
   const {
     className,
     id,
+    aos,
+    aosDuration,
     margin,
     fontcolor,
     weight,
@@ -177,6 +199,8 @@ const H6Style = props => {
   } = props
   return (
     <TextH6Style
+      data-aos={aos}
+      data-aos-duration={aosDuration}
       className={className}
       id={id}
       margin={margin}

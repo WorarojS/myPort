@@ -2,9 +2,14 @@ import React from "react"
 import ReactDOM from "react-dom"
 import "bootstrap/dist/css/bootstrap.css"
 import "./index.css"
-
+import AOS from "aos"
+import "aos/dist/aos.css"
 import App from "./App"
 import * as serviceWorker from "./serviceWorker"
+
+AOS.init({
+  startEvent: "load"
+})
 
 ReactDOM.render(<App />, document.getElementById("root"))
 

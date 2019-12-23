@@ -6,7 +6,11 @@ import { socialBar } from "../../util"
 const SocialBar = () => {
   return (
     <React.Fragment>
-      <DivWrapper className='flex'>
+      <DivWrapper
+        data-aos='fade-down'
+        data-aos-duration='1200'
+        className='flex'
+      >
         <DivWrapper className='line' />
         {socialBar.map((data, index) => (
           <DivWrapper key={index}>

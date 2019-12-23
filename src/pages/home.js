@@ -1,6 +1,13 @@
 import React from "react"
 import { Container } from "reactstrap"
-import { Section, Flex, Text, Button, SocialBar } from "../components"
+import {
+  Section,
+  Flex,
+  Text,
+  Button,
+  SocialBar,
+  DivWrapper
+} from "../components"
 import { LottieArt } from "../assets"
 import Lottie from "react-lottie"
 const Home = () => {
@@ -47,19 +54,19 @@ const Home = () => {
               >
                 at Nellika Co ・ Vancouver | Bangkok
               </Text.H6>
-              <Button
-                aos='fade-right'
-                aosDuration='2100'
-                border='1px solid white'
-                bgColor='rgb(0,0,0,0)'
-                fontcolor='white'
-                hoverBgColor='white'
-                hoverFontcolor='#F09819'
-                margin='1em 0'
-                padding='0.5em 2em'
-              >
-                About Me
-              </Button>
+              <DivWrapper aos='fade-right' aosDuration='2100'>
+                <Button
+                  border='1px solid white'
+                  bgColor='rgb(0,0,0,0)'
+                  fontcolor='white'
+                  hoverBgColor='white'
+                  hoverFontcolor='#F09819'
+                  margin='1em 0'
+                  padding='0.5em 2em'
+                >
+                  About Me
+                </Button>
+              </DivWrapper>
             </Flex>
             <Flex className='home-hide' width='50%'>
               <Lottie options={lottie} width='70%' />

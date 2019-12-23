@@ -2,9 +2,20 @@ import React from "react"
 import { DivStyled } from "./styled"
 
 const DivWrapper = props => {
-  const { children, margin, float, width, height, position } = props
+  const {
+    children,
+    aos,
+    aosDuration,
+    margin,
+    float,
+    width,
+    height,
+    position
+  } = props
   return (
     <DivStyled
+      data-aos={aos}
+      data-aos-duration={aosDuration}
       position={position}
       margin={margin}
       width={width}

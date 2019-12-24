@@ -1,11 +1,10 @@
 import React from "react"
-import Home from "./pages/home"
-import { Header } from "./components"
+import Pages from "./pages"
+
 function App() {
   return (
     <React.Fragment>
-      <Header />
-      <Home />
+      <Pages />
     </React.Fragment>
   )
 }

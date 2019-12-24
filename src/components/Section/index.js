@@ -2,9 +2,21 @@ import React from "react"
 import { SectionStyled } from "./styled"
 
 const Section = props => {
-  const { children, position, top, left, right, bottom, bg, minHeight } = props
+  const {
+    children,
+    id,
+    position,
+    top,
+    left,
+    right,
+    bottom,
+    bg,
+    minHeight,
+    padding
+  } = props
   return (
     <SectionStyled
+      id={id}
       position={position}
       top={top}
       left={left}
@@ -12,6 +24,7 @@ const Section = props => {
       bottom={bottom}
       bg={bg}
       minHeight={minHeight}
+      padding={padding}
     >
       {children}
     </SectionStyled>

@@ -14,7 +14,8 @@ const Button = props => {
     display,
     hoverBgColor,
     hoverFontcolor,
-    hoverborder
+    hoverborder,
+    fontSize
   } = props
   return (
     <ButtonStyled
@@ -29,10 +30,13 @@ const Button = props => {
       hoverBgColor={hoverBgColor}
       hoverFontcolor={hoverFontcolor}
       hoverborder={hoverborder}
+      fontSize={fontSize}
     >
       {children}
     </ButtonStyled>
   )
 }
-Button.defaultProps = {}
+Button.defaultProps = {
+  fontSize: "1em"
+}
 export default Button

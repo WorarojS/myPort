@@ -9,3 +9,7 @@ function importAll(r) {
 export const LottieArt = importAll(
   require.context("./lottie", false, /\.(json)$/)
 )
+
+export const Images = importAll(
+  require.context("./images", false, /\.(png|jpe?g|gif|svg)$/)
+)

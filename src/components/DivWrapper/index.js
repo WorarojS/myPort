@@ -6,6 +6,7 @@ const DivWrapper = props => {
     children,
     aos,
     aosDuration,
+    className,
     margin,
     float,
     width,
@@ -16,6 +17,7 @@ const DivWrapper = props => {
     <DivStyled
       data-aos={aos}
       data-aos-duration={aosDuration}
+      className={className}
       position={position}
       margin={margin}
       width={width}

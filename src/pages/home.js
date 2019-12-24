@@ -1,5 +1,7 @@
 import React from "react"
 import { Container } from "reactstrap"
+import { Header } from "../components"
+
 import {
   Section,
   Flex,
@@ -10,16 +12,23 @@ import {
 } from "../components"
 import { LottieArt } from "../assets"
 import Lottie from "react-lottie"
+import * as Scroll from "react-scroll"
+
 const Home = () => {
+  const Link = Scroll.Link
   const lottie = {
     loop: true,
     autoplay: true,
-    animationData: LottieArt["home1.json"]
+    animationData: LottieArt["man.json"]
   }
+
   return (
     <React.Fragment>
-      <Section bg='linear-gradient(to right,#F09819,#EDDE5D)'>
+      {/* <Section id='home' bg='linear-gradient(to right,#D6A4A4,#d1cbe2)'> */}
+      <Section id='home' bg='linear-gradient(to right,#F09819,#EDDE5D)'>
+        {/* <Section bg='linear-gradient(to right,#EC6F66,#F3A183)'> */}
         <Container>
+          <Header />
           <Flex height='calc(100vh - 6em)' justifyContent='flex-start'>
             <Flex
               className='responsive-flex'
@@ -55,21 +64,23 @@ const Home = () => {
                 at Nellika Co ・ Vancouver | Bangkok
               </Text.H6>
               <DivWrapper aos='fade-right' aosDuration='2100'>
-                <Button
-                  border='1px solid white'
-                  bgColor='rgb(0,0,0,0)'
-                  fontcolor='white'
-                  hoverBgColor='white'
-                  hoverFontcolor='#F09819'
-                  margin='1em 0'
-                  padding='0.5em 2em'
-                >
-                  About Me
-                </Button>
+                <Link to='aboutme' smooth={true}>
+                  <Button
+                    border='1px solid white'
+                    bgColor='rgb(0,0,0,0)'
+                    fontcolor='white'
+                    hoverBgColor='white'
+                    hoverFontcolor='#F09819'
+                    margin='1em 0'
+                    padding='0.5em 2em'
+                  >
+                    About Me
+                  </Button>
+                </Link>
               </DivWrapper>
             </Flex>
             <Flex className='home-hide' width='50%'>
-              <Lottie options={lottie} width='70%' />
+              <Lottie options={lottie} width='100%' />
             </Flex>
             <SocialBar />
           </Flex>

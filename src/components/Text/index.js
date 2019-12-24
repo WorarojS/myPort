@@ -217,14 +217,31 @@ const H6Style = props => {
 }
 
 const CustomStyle = props => {
-  const { className, fontcolor, fontSize, weight, align, children } = props
+  const {
+    className,
+    aos,
+    aosDuration,
+    margin,
+    fontcolor,
+    fontSize,
+    weight,
+    align,
+    children,
+    space,
+    lineHeight
+  } = props
   return (
     <TextCustomStyle
       className={className}
+      data-aos={aos}
+      data-aos-duration={aosDuration}
+      margin={margin}
       fontcolor={fontcolor}
       fontSize={fontSize}
       weight={weight}
       align={align}
+      space={space}
+      lineHeight={lineHeight}
     >
       {children}
     </TextCustomStyle>
@@ -265,6 +282,7 @@ const defaultProps = {
   className: null,
   children: null,
   align: null,
+  margin: 0,
   fontcolor: "#000",
   weight: 400,
   fontSize: null,

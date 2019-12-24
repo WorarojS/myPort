@@ -10,11 +10,10 @@ export const Nav = styled(LinkStyle)`
   font-weight: 300;
   cursor: pointer;
   margin: 0 2em;
-  opacity: 0.5;
+
   transition-duration: 0.3s;
 
   :hover {
-    opacity: 1;
     font-weight: 600;
     color: white !important;
   }

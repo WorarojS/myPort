@@ -41,6 +41,9 @@ export const TextH3Style = styled.h3`
   color: ${props => props.fontcolor};
   letter-spacing: ${props => props.space};
   line-height: ${props => props.lineHeight};
+  &.font1 {
+    font-family: "Cinzel", serif;
+  }
   :hover {
     color: ${props => props.hovercolor};
   }
@@ -56,6 +59,9 @@ export const TextH4Style = styled.h4`
   color: ${props => props.fontcolor};
   letter-spacing: ${props => props.space};
   line-height: ${props => props.lineHeight};
+  &.font1 {
+    font-family: "Cinzel", serif;
+  }
   :hover {
     color: ${props => props.hovercolor};
   }
@@ -68,13 +74,16 @@ export const TextH4Style = styled.h4`
 `
 export const TextH5Style = styled.h5`
   margin: ${props => props.margin};
-  font-size: 1.3em;
+  font-size: 1em;
   text-align: ${props => props.align};
   font-weight: ${props => props.weight};
   color: ${props => props.fontcolor};
   letter-spacing: ${props => props.space};
   line-height: ${props => props.lineHeight};
   transition-duration: 0.3s;
+  &.font2 {
+    font-family: "avenir", serif;
+  }
   :hover {
     color: ${props => props.hovercolor};
   }
@@ -91,6 +100,9 @@ export const TextH6Style = styled.h6`
   letter-spacing: ${props => props.space};
   line-height: ${props => props.lineHeight};
   transition-duration: 0.3s;
+  &.font2 {
+    font-family: "avenir", serif;
+  }
   :hover {
     color: ${props => props.hovercolor};
   }
@@ -100,10 +112,16 @@ export const TextH6Style = styled.h6`
 `
 
 export const TextCustomStyle = styled.h6`
+  margin: ${props => props.margin};
   font-size: ${props => props.fontSize};
   text-align: ${props => props.align};
   font-weight: ${props => props.weight};
   color: ${props => props.fontcolor};
+  letter-spacing: ${props => props.space};
+  line-height: ${props => props.lineHeight};
+  &.font1 {
+    font-family: "Cinzel", serif;
+  }
   :hover {
     color: ${props => props.hovercolor};
   }

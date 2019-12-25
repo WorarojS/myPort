@@ -222,6 +222,7 @@ const CustomStyle = props => {
     aos,
     aosDuration,
     margin,
+    padding,
     fontcolor,
     fontSize,
     weight,
@@ -236,6 +237,7 @@ const CustomStyle = props => {
       data-aos={aos}
       data-aos-duration={aosDuration}
       margin={margin}
+      padding={padding}
       fontcolor={fontcolor}
       fontSize={fontSize}
       weight={weight}

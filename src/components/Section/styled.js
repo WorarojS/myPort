@@ -8,6 +8,7 @@ export const SectionStyled = styled.section`
   bottom: ${props => props.bottom};
   background: ${props => props.bg};
   padding: ${props => props.padding};
+  overflow: hidden;
   &.home {
     background: linear-gradient(to right, #f09819, #edde5d, #debecc, #faaca8);
     background-size: 400% 400%;

@@ -26,9 +26,13 @@ export const TextH2Style = styled.h2`
   color: ${props => props.fontcolor};
   letter-spacing: ${props => props.space};
   line-height: ${props => props.lineHeight};
+  &.font1 {
+    font-family: "Cinzel", serif;
+  }
   :hover {
     color: ${props => props.hovercolor};
   }
+  
   @media only screen and (max-width: 768px) {
     font-size: 1.8em;
   }
@@ -118,6 +122,8 @@ export const TextCustomStyle = styled.h6`
   font-weight: ${props => props.weight};
   color: ${props => props.fontcolor};
   letter-spacing: ${props => props.space};
+  padding: ${props => props.padding};
+  margin: ${props => props.margin};
   line-height: ${props => props.lineHeight};
   &.font1 {
     font-family: "Cinzel", serif;

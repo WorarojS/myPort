@@ -16,7 +16,8 @@ const Flex = props => {
     padding,
     bgColor,
     width,
-    grow
+    grow,
+    wrap
   } = props
   return (
     <FlexStyled
@@ -33,6 +34,7 @@ const Flex = props => {
       bgColor={bgColor}
       width={width}
       grow={grow}
+      wrap={wrap}
     >
       {children}
     </FlexStyled>

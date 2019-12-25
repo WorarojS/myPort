@@ -32,7 +32,7 @@ const Home = () => {
           <Header />
           <Flex height='calc(100vh - 6em)' justifyContent='flex-start'>
             <Flex
-              className='responsive-flex'
+              className='responsive-flex-home'
               width='50%'
               flexDirection='column'
               alignItems='flex-start'

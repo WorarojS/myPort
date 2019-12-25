@@ -46,9 +46,8 @@ const AboutMe = () => {
                 My name is Chin. I am junior Front-end Developer currently
                 working remotely at Nellika Consulting responsible for develop
                 user interface website working closely with designer team using
-                ReactJS, HTML, CSS JavaScript and some experience in design with
-                Adobe XD. With a passion for create and develop in Content and
-                Website as a self-motivated team player. Graduated Bachelor of
+                ReactJS, HTML, CSS JavaScript, styled-components, Gitlab and
+                some experience in design with Adobe XD. Graduated Bachelor of
                 Business Administration and Diploma in Web and Mobile
                 Application Development.
               </Text.H5>
@@ -75,9 +74,7 @@ const AboutMe = () => {
               >
                 With a passion for create and develop in Content and Website as
                 a self-motivated team player. I am constantly pursuing my
-                passion for web technologies and other design related topics,
-                and I am currently playing around with ReactJS, HTML, CSS, and
-                Swift.
+                passion for web technologies and other design related topics.
               </Text.H5>
               <DivWrapper aos='fade-left' aosDuration='1300'>
                 <Button

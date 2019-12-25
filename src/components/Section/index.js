@@ -5,6 +5,7 @@ const Section = props => {
   const {
     children,
     id,
+    className,
     position,
     top,
     left,
@@ -16,6 +17,7 @@ const Section = props => {
   } = props
   return (
     <SectionStyled
+      className={className}
       id={id}
       position={position}
       top={top}

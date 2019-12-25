@@ -25,8 +25,9 @@ const Home = () => {
   return (
     <React.Fragment>
       {/* <Section id='home' bg='linear-gradient(to right,#D6A4A4,#d1cbe2)'> */}
-      <Section id='home' bg='linear-gradient(to right,#F09819,#EDDE5D)'>
-        {/* <Section bg='linear-gradient(to right,#EC6F66,#F3A183)'> */}
+      <Section className='home'>
+        {/* <Section bg='linear-gradient(to right,#f09819,#dfc942)'> */}
+        {/* <Section bg='linear-gradient(to left,#debecc,#faaca8)'> */}
         <Container>
           <Header />
           <Flex height='calc(100vh - 6em)' justifyContent='flex-start'>

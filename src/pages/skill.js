@@ -2,6 +2,7 @@ import React from "react"
 import { Container } from "reactstrap"
 import { Section, Text, Flex, DivWrapper, Image } from "../components"
 import { tool, skill } from "../util"
+
 const Skill = () => {
   return (
     <React.Fragment>

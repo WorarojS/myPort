@@ -12,6 +12,7 @@ export const FlexStyled = styled.div`
   padding: ${props => props.padding};
   margin: ${props => props.margin};
   background-color: ${props => props.bgColor};
+  background-image: url(${props => props.bgImage});
   flex-grow: ${props => props.grow};
   flex-wrap: ${props => props.wrap};
   @media only screen and (max-width: 992px) {

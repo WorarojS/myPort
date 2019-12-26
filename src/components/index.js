@@ -6,4 +6,15 @@ import Header from "./Header"
 import Button from "./ฺButton"
 import SocialBar from "./socialBar"
 import Image from "./Image"
-export { Section, Flex, Text, Header, DivWrapper, Button, SocialBar, Image }
+import FormContact from "./Form"
+export {
+  Section,
+  Flex,
+  Text,
+  Header,
+  DivWrapper,
+  Button,
+  SocialBar,
+  Image,
+  FormContact
+}

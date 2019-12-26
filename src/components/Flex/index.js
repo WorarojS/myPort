@@ -16,6 +16,7 @@ const Flex = props => {
     margin,
     padding,
     bgColor,
+    bgImage,
     width,
     grow,
     wrap
@@ -34,6 +35,7 @@ const Flex = props => {
       margin={margin}
       padding={padding}
       bgColor={bgColor}
+      bgImage={bgImage}
       width={width}
       grow={grow}
       wrap={wrap}

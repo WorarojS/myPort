@@ -23,7 +23,8 @@ const H1Style = props => {
     children,
     space,
     lineHeight,
-    hovercolor
+    hovercolor,
+    padding
   } = props
   return (
     <TextH1Style
@@ -39,6 +40,7 @@ const H1Style = props => {
       space={space}
       lineHeight={lineHeight}
       hovercolor={hovercolor}
+      padding={padding}
     >
       {children}
     </TextH1Style>
@@ -58,7 +60,8 @@ const H2Style = props => {
     children,
     space,
     lineHeight,
-    hovercolor
+    hovercolor,
+    padding
   } = props
   return (
     <TextH2Style
@@ -74,6 +77,7 @@ const H2Style = props => {
       space={space}
       lineHeight={lineHeight}
       hovercolor={hovercolor}
+      padding={padding}
     >
       {children}
     </TextH2Style>
@@ -93,7 +97,8 @@ const H3Style = props => {
     children,
     hovercolor,
     space,
-    lineHeight
+    lineHeight,
+    padding
   } = props
   return (
     <TextH3Style
@@ -108,6 +113,7 @@ const H3Style = props => {
       hovercolor={hovercolor}
       space={space}
       lineHeight={lineHeight}
+      padding={padding}
     >
       {children}
     </TextH3Style>
@@ -127,7 +133,8 @@ const H4Style = props => {
     children,
     hovercolor,
     space,
-    lineHeight
+    lineHeight,
+    padding
   } = props
   return (
     <TextH4Style
@@ -142,6 +149,7 @@ const H4Style = props => {
       hovercolor={hovercolor}
       space={space}
       lineHeight={lineHeight}
+      padding={padding}
     >
       {children}
     </TextH4Style>
@@ -161,7 +169,8 @@ const H5Style = props => {
     children,
     hovercolor,
     space,
-    lineHeight
+    lineHeight,
+    padding
   } = props
   return (
     <TextH5Style
@@ -176,6 +185,7 @@ const H5Style = props => {
       hovercolor={hovercolor}
       space={space}
       lineHeight={lineHeight}
+      padding={padding}
     >
       {children}
     </TextH5Style>
@@ -195,7 +205,8 @@ const H6Style = props => {
     children,
     hovercolor,
     space,
-    lineHeight
+    lineHeight,
+    padding
   } = props
   return (
     <TextH6Style
@@ -210,6 +221,7 @@ const H6Style = props => {
       hovercolor={hovercolor}
       space={space}
       lineHeight={lineHeight}
+      padding={padding}
     >
       {children}
     </TextH6Style>

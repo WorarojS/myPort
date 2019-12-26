@@ -18,4 +18,10 @@ export const DivStyled = styled.div`
     margin: 0 0 1em 0;
     border: 1px dashed rgb(125, 125, 125, 0.5);
   }
+  &.headline3 {
+    height: 1px;
+    width: 5em;
+    margin: 0 0 0.5em 0;
+    border: 0.5px solid rgb(125, 125, 125, 0.5);
+  }
 `

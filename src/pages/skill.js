@@ -8,7 +8,7 @@ const Skill = () => {
       <Section bg='#F8F9F8'>
         <Container>
           <DivWrapper>
-            <Flex aos='fade-up' aosDuration='1000' flexDirection='column'>
+            <Flex flexDirection='column'>
               <Text.Custom margin='0' fontcolor='rgb(125,125,125,0.5)'>
                 •
               </Text.Custom>

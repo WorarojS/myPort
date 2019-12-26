@@ -8,7 +8,7 @@ const AboutMe = () => {
     <React.Fragment>
       <Section id='aboutme' bg='#F8F9F8'>
         <Container>
-          <Flex aos='fade-up' aosDuration='1000' flexDirection='column'>
+          <Flex flexDirection='column'>
             <DivWrapper className='headline' />
             <Text.Custom
               fontSize='0.7em'

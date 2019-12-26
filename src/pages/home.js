@@ -30,7 +30,7 @@ const Home = () => {
         {/* <Section bg='linear-gradient(to left,#debecc,#faaca8)'> */}
         <Container>
           <Header />
-          <Flex height='calc(100vh - 6em)' justifyContent='flex-start'>
+          <Flex minHeight='calc(100vh - 6em)' justifyContent='flex-start'>
             <Flex
               className='responsive-flex-home'
               width='50%'

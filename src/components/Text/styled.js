@@ -10,7 +10,11 @@ export const TextH1Style = styled.h1`
   color: ${props => props.fontcolor};
   letter-spacing: ${props => props.space};
   line-height: ${props => props.lineHeight};
+  padding: ${props => props.padding};
   transition-duration: 0.3s;
+  &.font1 {
+    font-family: "Cinzel", serif;
+  }
   :hover {
     color: ${props => props.hovercolor};
   }
@@ -26,13 +30,14 @@ export const TextH2Style = styled.h2`
   color: ${props => props.fontcolor};
   letter-spacing: ${props => props.space};
   line-height: ${props => props.lineHeight};
+  padding: ${props => props.padding};
   &.font1 {
     font-family: "Cinzel", serif;
   }
   :hover {
     color: ${props => props.hovercolor};
   }
-  
+
   @media only screen and (max-width: 768px) {
     font-size: 1.8em;
   }
@@ -45,6 +50,7 @@ export const TextH3Style = styled.h3`
   color: ${props => props.fontcolor};
   letter-spacing: ${props => props.space};
   line-height: ${props => props.lineHeight};
+  padding: ${props => props.padding};
   &.font1 {
     font-family: "Cinzel", serif;
   }
@@ -53,6 +59,9 @@ export const TextH3Style = styled.h3`
   }
   @media only screen and (max-width: 768px) {
     font-size: 1.5em;
+    &.exp {
+      font-size: 1.5em;
+    }
   }
 `
 export const TextH4Style = styled.h4`
@@ -63,6 +72,7 @@ export const TextH4Style = styled.h4`
   color: ${props => props.fontcolor};
   letter-spacing: ${props => props.space};
   line-height: ${props => props.lineHeight};
+  padding: ${props => props.padding};
   &.font1 {
     font-family: "Cinzel", serif;
   }
@@ -84,6 +94,7 @@ export const TextH5Style = styled.h5`
   color: ${props => props.fontcolor};
   letter-spacing: ${props => props.space};
   line-height: ${props => props.lineHeight};
+  padding: ${props => props.padding};
   transition-duration: 0.3s;
   &.font2 {
     font-family: "avenir", serif;
@@ -103,6 +114,7 @@ export const TextH6Style = styled.h6`
   color: ${props => props.fontcolor};
   letter-spacing: ${props => props.space};
   line-height: ${props => props.lineHeight};
+  padding: ${props => props.padding};
   transition-duration: 0.3s;
   &.font2 {
     font-family: "avenir", serif;
@@ -130,6 +142,11 @@ export const TextCustomStyle = styled.h6`
   }
   :hover {
     color: ${props => props.hovercolor};
+  }
+  @media only screen and (max-width: 768px) {
+    &.exp {
+      font-size: 1em;
+    }
   }
 `
 

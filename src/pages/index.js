@@ -3,6 +3,8 @@ import Home from "./home"
 import Aboutme from "./aboutme"
 import Skill from "./skill"
 import Experience from "./experience"
+import Education from "./education"
+
 function Pages() {
   return (
     <React.Fragment>
@@ -10,6 +12,7 @@ function Pages() {
       <Aboutme />
       <Skill />
       <Experience />
+      <Education />
     </React.Fragment>
   )
 }

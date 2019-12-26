@@ -6,7 +6,7 @@ import { Icon } from "../assets"
 const Experience = () => {
   return (
     <React.Fragment>
-      <Section bg='#F8F9F8'>
+      <Section id='experience' bg='#F8F9F8'>
         <Container>
           <Flex>
             <DivWrapper className='headline3' />

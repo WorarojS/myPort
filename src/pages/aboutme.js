@@ -2,8 +2,9 @@ import React from "react"
 import { Container } from "reactstrap"
 import { Section, Flex, Text, Button, Image, DivWrapper } from "../components"
 import { Images } from "../assets"
-
+import * as Scroll from "react-scroll"
 const AboutMe = () => {
+  const Link = Scroll.Link
   return (
     <React.Fragment>
       <Section id='aboutme' bg='#F8F9F8'>
@@ -64,18 +65,20 @@ const AboutMe = () => {
                 Application Development.
               </Text.H5>
               <DivWrapper aos='fade-left' aosDuration='1300'>
-                <Button
-                  border='1px solid #F09819'
-                  bgColor='rgb(0,0,0,0)'
-                  fontcolor='#F09819'
-                  hoverBgColor='#F09819'
-                  hoverFontcolor='white'
-                  padding='0.5em 1.5em'
-                  fontSize='0.8em'
-                  margin='1em 0'
-                >
-                  EXPERIENCE
-                </Button>
+                <Link to='education' smooth={true}>
+                  <Button
+                    border='1px solid #F09819'
+                    bgColor='rgb(0,0,0,0)'
+                    fontcolor='#F09819'
+                    hoverBgColor='#F09819'
+                    hoverFontcolor='white'
+                    padding='0.5em 1.5em'
+                    fontSize='0.8em'
+                    margin='1em 0'
+                  >
+                    EDUCATION
+                  </Button>
+                </Link>
               </DivWrapper>
               <Text.H5
                 className='font2'
@@ -89,18 +92,20 @@ const AboutMe = () => {
                 passion for web technologies and other design related topics.
               </Text.H5>
               <DivWrapper aos='fade-left' aosDuration='1300'>
-                <Button
-                  border='1px solid #F09819'
-                  bgColor='rgb(0,0,0,0)'
-                  fontcolor='#F09819'
-                  hoverBgColor='#F09819'
-                  hoverFontcolor='white'
-                  padding='0.5em 1.5em'
-                  fontSize='0.8em'
-                  margin='1em 0'
-                >
-                  SKILLS
-                </Button>
+                <Link to='experience' smooth={true}>
+                  <Button
+                    border='1px solid #F09819'
+                    bgColor='rgb(0,0,0,0)'
+                    fontcolor='#F09819'
+                    hoverBgColor='#F09819'
+                    hoverFontcolor='white'
+                    padding='0.5em 1.5em'
+                    fontSize='0.8em'
+                    margin='1em 0'
+                  >
+                    EXPERIENCE
+                  </Button>
+                </Link>
               </DivWrapper>
               <Text.H5
                 className='font2'

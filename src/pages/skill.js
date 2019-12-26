@@ -5,7 +5,7 @@ import { tool, skill } from "../util"
 const Skill = () => {
   return (
     <React.Fragment>
-      <Section bg='#F8F9F8'>
+      <Section id='skill' bg='#F8F9F8'>
         <Container>
           <DivWrapper>
             <Flex flexDirection='column'>

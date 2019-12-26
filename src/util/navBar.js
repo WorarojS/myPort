@@ -1,1 +1,1 @@
-export const navBar = ["experience", "education", "contact"]
+export const navBar = ["skill", "experience", "contact"]

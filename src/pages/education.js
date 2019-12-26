@@ -1,11 +1,11 @@
 import React from "react"
 import { Container } from "reactstrap"
-import { Section, Flex, DivWrapper, Text } from "../components"
+import { Section, Flex, Text } from "../components"
 import { education } from "../util"
 const Education = () => {
   return (
     <React.Fragment>
-      <Section bg='#F8F9F8'>
+      <Section id='education' bg='#F8F9F8'>
         <Container>
           <Flex padding='1em'>
             <Text.Custom
@@ -34,7 +34,7 @@ const Education = () => {
                 </Text.H2>
                 <Text.Custom
                   aos='fade-left'
-                  aosDuration='1600'
+                  aosDuration='1400'
                   className='exp'
                   fontSize='1.4em'
                   space='0.1em'
@@ -44,7 +44,7 @@ const Education = () => {
                 >
                   {data.place}
                 </Text.Custom>
-                <Text.H6 aos='fade-left' aosDuration='1900' padding='0 0 0 4em'>
+                <Text.H6 aos='fade-left' aosDuration='1600' padding='0 0 0 4em'>
                   {data.quali}
                 </Text.H6>
               </Flex>

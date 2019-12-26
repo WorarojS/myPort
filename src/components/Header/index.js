@@ -24,7 +24,7 @@ const Header = () => {
               data-aos='fade-down'
               data-aos-duration={`1` + (index + 2) + `00`}
             >
-              <Nav key={index} to={data}>
+              <Nav key={index} to={data} smooth={true}>
                 {data}
               </Nav>
             </DivWrapper>

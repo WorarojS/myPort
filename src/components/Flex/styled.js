@@ -12,9 +12,21 @@ export const FlexStyled = styled.div`
   margin: ${props => props.margin};
   background-color: ${props => props.bgColor};
   flex-grow: ${props => props.grow};
+  flex-wrap: ${props => props.wrap};
   @media only screen and (max-width: 992px) {
+    &.responsive-flex-home {
+      width: 100%;
+      justify-content: center;
+    }
     &.responsive-flex {
-      width: 90%;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+    &.responsive-wrap-flex {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
     }
     &.home-hide {
       display: none;

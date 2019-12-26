@@ -13,3 +13,7 @@ export const LottieArt = importAll(
 export const Images = importAll(
   require.context("./images", false, /\.(png|jpe?g|gif|svg)$/)
 )
+
+export const Icon = importAll(
+  require.context("./icons", false, /\.(png|jpe?g|gif|svg)$/)
+)

@@ -19,13 +19,25 @@ const AboutMe = () => {
               ABOUT ME
             </Text.Custom>
           </Flex>
-          <Flex minHeight='100vh'>
-            <Flex aos='fade-right' aosDuration='1300' width='50%'>
+          <Flex className='responsive-wrap-flex ' minHeight='100vh'>
+            <Flex
+              className='responsive-flex'
+              aos='fade-right'
+              aosDuration='1300'
+              width='50%'
+              padding='1em 0'
+            >
               <Image width='90%' source={`${Images["profile.jpg"]}`} />
             </Flex>
 
-            <Flex width='50%' flexDirection='column' alignItems='flex-start'>
-              <Text.Custom
+            <Flex
+              className='responsive-flex-home'
+              width='50%'
+              flexDirection='column'
+              alignItems='flex-start'
+              padding='1em 0'
+            >
+              <Text.H3
                 className='font1'
                 aos='fade-left'
                 aosDuration='1300'
@@ -35,7 +47,7 @@ const AboutMe = () => {
               >
                 Chin Woraroj <br />
                 Suruxruttanaskul
-              </Text.Custom>
+              </Text.H3>
               <Text.H5
                 className='font2'
                 aos='fade-left'

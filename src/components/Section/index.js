@@ -34,7 +34,8 @@ const Section = props => {
 }
 
 Section.defaultsProps = {
-  position: "relative"
+  position: "relative",
+  bg: "#F8F9F8"
 }
 
 export default Section

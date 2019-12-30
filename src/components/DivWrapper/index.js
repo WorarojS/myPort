@@ -4,6 +4,7 @@ import { DivStyled } from "./styled"
 const DivWrapper = props => {
   const {
     children,
+
     aos,
     aosDuration,
     className,

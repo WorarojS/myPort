@@ -15,7 +15,8 @@ const Button = props => {
     hoverBgColor,
     hoverFontcolor,
     hoverborder,
-    fontSize
+    fontSize,
+    onClick
   } = props
   return (
     <ButtonStyled
@@ -31,6 +32,7 @@ const Button = props => {
       hoverFontcolor={hoverFontcolor}
       hoverborder={hoverborder}
       fontSize={fontSize}
+      onClick={onClick}
     >
       {children}
     </ButtonStyled>

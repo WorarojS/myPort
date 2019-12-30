@@ -6,6 +6,7 @@ export const DivStyled = styled.div`
   height: ${props => props.height};
   margin: ${props => props.margin};
   float: ${props => props.float};
+
   &.headline {
     height: 50px;
     width: 1px;

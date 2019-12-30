@@ -4,7 +4,7 @@ import Aboutme from "./aboutme"
 import Skill from "./skill"
 import Experience from "./experience"
 import Education from "./education"
-
+import Contact from "./contact"
 function Pages() {
   return (
     <React.Fragment>
@@ -13,6 +13,7 @@ function Pages() {
       <Skill />
       <Experience />
       <Education />
+      <Contact />
     </React.Fragment>
   )
 }

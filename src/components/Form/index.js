@@ -36,7 +36,7 @@ const FormContact = () => {
             Firebase.database()
               .ref()
               .child("mail")
-              .push(obj)
+              .push([obj, new Date().toString()])
               .then(
                 setSubmit(prevState => ({
                   ...prevState,

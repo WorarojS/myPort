@@ -19,4 +19,9 @@ export const ButtonStyled = styled.button`
     color: ${props => props.hoverFontcolor};
     border: ${props => props.hoverborder};
   }
+  &.bg1 {
+    background: linear-gradient(to right, #f09819, #edde5d, #debecc, #faaca8);
+    background-size: 400% 400%;
+    animation: gradientBG 20s ease infinite;
+  }
 `

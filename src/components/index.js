@@ -7,6 +7,7 @@ import Button from "./ฺButton"
 import SocialBar from "./socialBar"
 import Image from "./Image"
 import FormContact from "./Form"
+
 export {
   Section,
   Flex,

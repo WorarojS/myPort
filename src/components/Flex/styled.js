@@ -15,6 +15,10 @@ export const FlexStyled = styled.div`
   background-image: url(${props => props.bgImage});
   flex-grow: ${props => props.grow};
   flex-wrap: ${props => props.wrap};
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   @media only screen and (max-width: 992px) {
     &.responsive-flex-home {
       width: 100%;

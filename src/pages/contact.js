@@ -6,8 +6,9 @@ const Contact = () => {
   return (
     <React.Fragment>
       <Section id='contact' bg='#F8F9F8'>
-        <Flex>
+        <Flex className='responsive-wrap-flex'>
           <Flex
+            className='responsive-flex'
             bgImage={`${Images["profile2.jpg"]}`}
             width='50%'
             flexDirection='column'
@@ -25,11 +26,14 @@ const Contact = () => {
               margin='1em'
             >
               I am currently based in Vancouver. Please contact me whenever you
-              want. I'm happy to answer any question you have. Just send me a
-              message in the form with any question you may have.
+              want. Just send me a message in the form with any question you may
+              have. I'm happy to answer any question. <br />
+              <br />
+              Looking forward to hear back from you.
             </Text.Custom>
           </Flex>
           <Flex
+            className='responsive-flex'
             width='50%'
             height='50vh'
             flexDirection='column'

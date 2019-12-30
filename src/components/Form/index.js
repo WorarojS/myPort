@@ -1,9 +1,19 @@
-import React from "react"
+import React, { useState } from "react"
 import { Formik, Form, ErrorMessage } from "formik"
 import * as Yup from "yup"
-import { Flex, DivWrapper, Button } from "../../components"
+import { Flex, DivWrapper, Button, Text } from "../../components"
 import { Input, FieldStyled } from "./styled"
+import { faSpinner } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+
+import Firebase from "../../config/firebaseConfig"
+
 const FormContact = () => {
+  const [submit, setSubmit] = useState({
+    isShow: true,
+    isLoading: false,
+    name: ""
+  })
   const schema = Yup.object().shape({
     name: Yup.string().required("Please input your name"),
     email: Yup.string()
@@ -20,13 +30,27 @@ const FormContact = () => {
           message: ""
         }}
         validationSchema={schema}
-        onSubmit={obj => {
-          alert(JSON.stringify(obj))
+        onSubmit={(obj, { resetForm }) => {
+          setSubmit(prevState => ({ ...prevState, isLoading: true }))
+          setTimeout(function() {
+            Firebase.database()
+              .ref()
+              .child("mail")
+              .push(obj)
+              .then(
+                setSubmit(prevState => ({
+                  ...prevState,
+                  isShow: false,
+                  name: obj.name
+                }))
+              )
+              .then(resetForm)
+          }, 2000)
         }}
       >
         {({ touched, errors, values, setFieldValue, setFieldTouched }) => (
           <DivWrapper width='100%'>
-            {
+            {submit.isShow ? (
               <Form>
                 <Flex
                   flexDirection='column'
@@ -70,7 +94,7 @@ const FormContact = () => {
                     <FieldStyled
                       component='textarea'
                       name='message'
-                      placeholder='Please leave you message (maximum 200 letter)'
+                      placeholder='Message | Maximum 200 letter'
                       maxLength='200'
                       rows='5'
                       className={`form-control ${touched.message &&
@@ -92,11 +116,46 @@ const FormContact = () => {
                     margin='1em 0'
                     padding='0.25em 1em'
                   >
-                    SUBMIT
+                    {submit.isLoading ? (
+                      <div>
+                        <FontAwesomeIcon
+                          className='fa-spin mr-2 ml-2'
+                          icon={faSpinner}
+                        />
+                        SUBMITTING
+                      </div>
+                    ) : (
+                      "SUBMIT"
+                    )}
                   </Button>
                 </Flex>
               </Form>
-            }
+            ) : (
+              <Flex flexDirection='column'>
+                <Text.H5>
+                  Thank you {submit.name}. I'll get back to you as soon as
+                  possible.
+                </Text.H5>
+                <Button
+                  border='1px solid #F09819'
+                  bgColor='#ffff'
+                  fontcolor='#F09819'
+                  hoverBgColor='#F09819'
+                  hoverFontcolor='#ffff'
+                  margin='1em 0'
+                  padding='0.25em 1em'
+                  onClick={() =>
+                    setSubmit({
+                      isShow: true,
+                      isLoading: false,
+                      name: ""
+                    })
+                  }
+                >
+                  Back
+                </Button>
+              </Flex>
+            )}
           </DivWrapper>
         )}
       </Formik>

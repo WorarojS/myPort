@@ -11,7 +11,7 @@ export const DivWrapper = styled.div`
   &.line {
     width: 2px;
     height: 15em;
-    border: 1px solid rgb(0, 0, 0, 0.5);
+    border: 1px solid rgb(255, 255, 255, 0.5);
     margin: 0 0 1em 0;
   }
 `
@@ -33,10 +33,10 @@ export const Link = styled.a`
 
 export const FontAwesomeIconStyled = styled(FontAwesomeIcon)`
   transition-duration: 0.3s;
-  color: black;
+  color: white;
   &.social {
     :hover {
-      color: white;
+      color: black;
     }
   }
 `

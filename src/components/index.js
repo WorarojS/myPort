@@ -7,6 +7,7 @@ import Button from "./ฺButton"
 import SocialBar from "./socialBar"
 import Image from "./Image"
 import FormContact from "./Form"
+import Footer from "./Footer"
 
 export {
   Section,
@@ -17,5 +18,6 @@ export {
   Button,
   SocialBar,
   Image,
-  FormContact
+  FormContact,
+  Footer
 }

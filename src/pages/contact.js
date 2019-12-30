@@ -9,6 +9,8 @@ const Contact = () => {
         <Flex className='responsive-wrap-flex'>
           <Flex
             className='responsive-flex'
+            aos='fade-right'
+            aosDuration='1200'
             bgImage={`${Images["profile2.jpg"]}`}
             width='50%'
             flexDirection='column'
@@ -34,6 +36,8 @@ const Contact = () => {
           </Flex>
           <Flex
             className='responsive-flex'
+            aos='fade-left'
+            aosDuration='1200'
             width='50%'
             height='50vh'
             flexDirection='column'

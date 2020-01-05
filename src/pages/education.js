@@ -24,6 +24,7 @@ const Education = () => {
           >
             {education.map((data, index) => (
               <Flex
+                key={index}
                 flexDirection='column'
                 alignItems='flex-start'
                 alignSelf='flex-start'

@@ -21,10 +21,11 @@ const Header = () => {
         <Flex className='home-hide' grow='1' justifyContent='flex-end'>
           {navBar.map((data, index) => (
             <DivWrapper
+              key={index}
               data-aos='fade-down'
               data-aos-duration={`1` + (index + 2) + `00`}
             >
-              <Nav key={index} to={data} smooth={true}>
+              <Nav to={data} smooth={true}>
                 {data}
               </Nav>
             </DivWrapper>

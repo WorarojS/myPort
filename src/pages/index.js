@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import Home from "./home"
 import Aboutme from "./aboutme"
 import Skill from "./skill"
@@ -8,22 +8,21 @@ import Contact from "./contact"
 import Firebase from "../config/firebaseConfig"
 import { Footer } from "../components"
 import MobileDetect from "mobile-detect"
-
+import Project from "./project"
 function Pages() {
   const year = new Date().getFullYear()
   const month = new Date().getMonth() + 1
   const day = new Date().getDate()
   const database = Firebase.database()
     .ref()
-    .child("time stamp")
+    .child("time stamp V2")
     .child(year)
     .child(month)
     .child(day)
+
   const md = new MobileDetect(window.navigator.userAgent)
 
-  useEffect(() => {
-    getLocation()
-  })
+  getLocation()
 
   function getLocation() {
     if (navigator.geolocation) {
@@ -36,18 +35,23 @@ function Pages() {
       console.log("Geolocation is not supported by this browser.")
     }
   }
+  const FbView = Firebase.database()
+    .ref()
+    .child("time stamp V2")
+    .child("view")
+
+  FbView.once("value", snap => {
+    // setView(snap.val())
+
+    let lastView = Number(snap.val())
+    let viewCount = lastView + 1
+    FbView.set(viewCount)
+  })
 
   function showPosition(position) {
-    const mdData = [
-      md.ua,
-      md.mobile(),
-      md.phone(),
-      md.tablet(),
-      md.os(),
-      md.versionStr("Build")
-    ]
+    // FbView.update({ view: currentView + 1 })
     const latlon = position.coords.latitude + "," + position.coords.longitude
-    database.push([new Date().toString(), latlon, mdData])
+    database.push([new Date().toString(), md.ua, latlon])
   }
 
   function showError(error) {
@@ -89,6 +93,7 @@ function Pages() {
       <Home />
       <Aboutme />
       <Skill />
+      <Project />
       <Experience />
       <Education />
       <Contact />

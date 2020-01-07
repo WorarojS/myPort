@@ -4,7 +4,7 @@ export const FontAwesomeIconStyled = styled(FontAwesomeIcon)`
   color: white;
   transition-duration: 0.3s;
   :hover {
-    color: #f09819;
+    color: black;
   }
 `
 export const Link = styled.a`
@@ -21,7 +21,7 @@ export const Link = styled.a`
     color: ${props => props.fontcolor};
   }
   :hover {
-    color: #f09819;
+    color: black;
   }
   &.social {
     margin: 0 0 0 50px;

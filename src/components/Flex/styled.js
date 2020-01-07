@@ -15,6 +15,7 @@ export const FlexStyled = styled.div`
   background-image: url(${props => props.bgImage});
   flex-grow: ${props => props.grow};
   flex-wrap: ${props => props.wrap};
+  overflow: ${props => props.overflow};
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -34,6 +35,7 @@ export const FlexStyled = styled.div`
       align-items: center;
       width: 100%;
     }
+
     &.home-hide {
       display: none;
     }

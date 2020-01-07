@@ -6,7 +6,7 @@ import { Icon } from "../assets"
 const Experience = () => {
   return (
     <React.Fragment>
-      <Section id='experience' bg='#F8F9F8'>
+      <Section id='experience' bg='#F8F9F8' padding='2em 0'>
         <Container>
           <Flex>
             <DivWrapper className='headline3' />
@@ -42,7 +42,7 @@ const Experience = () => {
                   weight='300'
                   lineHeight='1.7em'
                 >
-                  Nellika Consulting co. ltd | Remote Frontend Developer
+                  Nellika Consulting co. ltd | Intern Remote Frontend Developer
                 </Text.Custom>
                 <Text.H6 aos='fade-left' aosDuration='1900'>
                   Responsible for develop user interface website using React.js

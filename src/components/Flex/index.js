@@ -19,7 +19,8 @@ const Flex = props => {
     bgImage,
     width,
     grow,
-    wrap
+    wrap,
+    overflow
   } = props
   return (
     <FlexStyled
@@ -39,6 +40,7 @@ const Flex = props => {
       width={width}
       grow={grow}
       wrap={wrap}
+      overflow={overflow}
     >
       {children}
     </FlexStyled>

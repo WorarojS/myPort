@@ -8,7 +8,7 @@ import Contact from "./contact"
 import Firebase from "../config/firebaseConfig"
 import { Footer } from "../components"
 import MobileDetect from "mobile-detect"
-
+import Project from "./project"
 function Pages() {
   const year = new Date().getFullYear()
   const month = new Date().getMonth() + 1
@@ -93,6 +93,7 @@ function Pages() {
       <Home />
       <Aboutme />
       <Skill />
+      <Project />
       <Experience />
       <Education />
       <Contact />

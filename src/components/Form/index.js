@@ -25,6 +25,7 @@ const FormContact = () => {
     <React.Fragment>
       <Formik
         initialValues={{
+          date: new Date().toString(),
           name: "",
           email: "",
           message: ""
@@ -36,7 +37,7 @@ const FormContact = () => {
             Firebase.database()
               .ref()
               .child("mail")
-              .push([obj, new Date().toString()])
+              .push(obj)
               .then(
                 setSubmit(prevState => ({
                   ...prevState,

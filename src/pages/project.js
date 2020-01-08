@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { Container } from "reactstrap"
-import { Section, Text, Flex, DivWrapper, Image, Button } from "../components"
+import { Section, Text, Flex, Image, Button } from "../components"
 
 import { projectList } from "../util"
 const Project = () => {

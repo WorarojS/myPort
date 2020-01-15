@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/myPort/static/css/main.28966d60.chunk.css",
-    "main.js": "/myPort/static/js/main.f880dd1c.chunk.js",
-    "main.js.map": "/myPort/static/js/main.f880dd1c.chunk.js.map",
+    "main.js": "/myPort/static/js/main.ef7a7fe8.chunk.js",
+    "main.js.map": "/myPort/static/js/main.ef7a7fe8.chunk.js.map",
     "runtime-main.js": "/myPort/static/js/runtime-main.85e2a500.js",
     "runtime-main.js.map": "/myPort/static/js/runtime-main.85e2a500.js.map",
-    "static/css/2.a409f8c1.chunk.css": "/myPort/static/css/2.a409f8c1.chunk.css",
-    "static/js/2.7f66034c.chunk.js": "/myPort/static/js/2.7f66034c.chunk.js",
-    "static/js/2.7f66034c.chunk.js.map": "/myPort/static/js/2.7f66034c.chunk.js.map",
+    "static/css/2.7e1fffba.chunk.css": "/myPort/static/css/2.7e1fffba.chunk.css",
+    "static/js/2.ef29b0cf.chunk.js": "/myPort/static/js/2.ef29b0cf.chunk.js",
+    "static/js/2.ef29b0cf.chunk.js.map": "/myPort/static/js/2.ef29b0cf.chunk.js.map",
     "index.html": "/myPort/index.html",
-    "precache-manifest.439b1eba0dcc3e2051f8a93a87b6c187.js": "/myPort/precache-manifest.439b1eba0dcc3e2051f8a93a87b6c187.js",
+    "precache-manifest.a427f1c75be170703b72ba81826ac681.js": "/myPort/precache-manifest.a427f1c75be170703b72ba81826ac681.js",
     "service-worker.js": "/myPort/service-worker.js",
-    "static/css/2.a409f8c1.chunk.css.map": "/myPort/static/css/2.a409f8c1.chunk.css.map",
+    "static/css/2.7e1fffba.chunk.css.map": "/myPort/static/css/2.7e1fffba.chunk.css.map",
     "static/css/main.28966d60.chunk.css.map": "/myPort/static/css/main.28966d60.chunk.css.map",
-    "static/js/2.7f66034c.chunk.js.LICENSE": "/myPort/static/js/2.7f66034c.chunk.js.LICENSE",
+    "static/js/2.ef29b0cf.chunk.js.LICENSE": "/myPort/static/js/2.ef29b0cf.chunk.js.LICENSE",
     "static/media/MovieApi.png": "/myPort/static/media/MovieApi.57d3d467.png",
     "static/media/Project-Mockup.png": "/myPort/static/media/Project-Mockup.e1c87523.png",
     "static/media/SickBoyReact.png": "/myPort/static/media/SickBoyReact.79286096.png",
@@ -43,9 +43,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.85e2a500.js",
-    "static/css/2.a409f8c1.chunk.css",
-    "static/js/2.7f66034c.chunk.js",
+    "static/css/2.7e1fffba.chunk.css",
+    "static/js/2.ef29b0cf.chunk.js",
     "static/css/main.28966d60.chunk.css",
-    "static/js/main.f880dd1c.chunk.js"
+    "static/js/main.ef7a7fe8.chunk.js"
   ]
 }

@@ -8,7 +8,7 @@ import {
   Text,
   Button,
   SocialBar,
-  DivWrapper
+  DivWrapper,
 } from "../components"
 import { LottieArt } from "../assets"
 import Lottie from "react-lottie"
@@ -19,7 +19,7 @@ const Home = () => {
   const lottie = {
     loop: true,
     autoplay: true,
-    animationData: LottieArt["man.json"]
+    animationData: LottieArt["man.json"],
   }
 
   return (
@@ -54,7 +54,7 @@ const Home = () => {
                 weight='700'
                 space='0.5em'
               >
-                FRONTEND DEVELOPER
+                REACT・FRONTEND DEVELOPER
               </Text.H4>
               <Text.H6
                 aos='fade-right'
@@ -62,7 +62,7 @@ const Home = () => {
                 margin='0.5em 0'
                 space='0.2em'
               >
-                at Nellika Co ・ Vancouver | Bangkok
+                Looking for Job Opportunity ・ Vancouver | Bangkok
               </Text.H6>
               <DivWrapper aos='fade-right' aosDuration='2100'>
                 <Link to='aboutme' smooth={true}>

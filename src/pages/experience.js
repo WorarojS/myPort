@@ -31,7 +31,7 @@ const Experience = () => {
               />
               <Flex flexDirection='column' padding='1em'>
                 <Text.H2 aos='fade-left' aosDuration='1200' className='font1'>
-                  2019 - Present
+                  2019 - 2020
                 </Text.H2>
                 <Text.Custom
                   aos='fade-left'
@@ -45,8 +45,8 @@ const Experience = () => {
                   Nellika Consulting co. ltd | Intern Remote Frontend Developer
                 </Text.Custom>
                 <Text.H6 aos='fade-left' aosDuration='1900'>
-                  Responsible for develop user interface website using React.js
-                  HTML CSS JS styled-components.
+                  Responsible for develop user interface website using React ES6
+                  Hooks and Redux with styled-components and Gitlab.
                 </Text.H6>
               </Flex>
             </Flex>

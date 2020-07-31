@@ -13,6 +13,7 @@ import {
 import { LottieArt } from "../assets"
 import Lottie from "react-lottie"
 import * as Scroll from "react-scroll"
+import Resume from "../assets/resume2020.pdf"
 
 const Home = () => {
   const Link = Scroll.Link
@@ -46,7 +47,7 @@ const Home = () => {
               >
                 CHIN・SU
               </Text.H1>
-              <Text.H4
+              <Text.H5
                 className='home-position'
                 aos='fade-right'
                 aosDuration='1600'
@@ -55,15 +56,46 @@ const Home = () => {
                 space='0.5em'
               >
                 REACT・FRONTEND DEVELOPER
-              </Text.H4>
+              </Text.H5>
               <Text.H6
                 aos='fade-right'
                 aosDuration='1900'
                 margin='0.5em 0'
                 space='0.2em'
+                weight={700}
               >
                 Looking for Job Opportunity ・ Vancouver | Bangkok
               </Text.H6>
+              <Text.Custom
+                aos='fade-right'
+                aosDuration='1900'
+                margin='5px 0 0 0'
+                space='0.2em'
+                fontSize='0.40em'
+                weight={600}
+              >
+                Former Intern Frontend Dev at Nellika.co
+              </Text.Custom>
+              <Text.Custom
+                aos='fade-right'
+                aosDuration='1900'
+                margin='5px 0 0 0'
+                space='0.2em'
+                fontSize='0.40em'
+                weight={400}
+              >
+                Former WMAD Student at Cornerstone College
+              </Text.Custom>
+              <Text.Custom
+                aos='fade-right'
+                aosDuration='1900'
+                margin='5px 0 0 0'
+                space='0.2em'
+                fontSize='0.40em'
+                weight={200}
+              >
+                Former BBA Student at Dusit Thani College
+              </Text.Custom>
               <DivWrapper aos='fade-right' aosDuration='2100'>
                 <Link to='aboutme' smooth={true}>
                   <Button
@@ -72,12 +104,25 @@ const Home = () => {
                     fontcolor='white'
                     hoverBgColor='white'
                     hoverFontcolor='#F09819'
-                    margin='1em 0'
-                    padding='0.5em 2em'
+                    margin='1em 1em 0 0'
+                    padding='0.25em 1em'
                   >
                     About Me
                   </Button>
                 </Link>
+                <a href={Resume} target='_blank'>
+                  <Button
+                    border='1px solid white'
+                    bgColor='rgb(0,0,0,0)'
+                    fontcolor='white'
+                    hoverBgColor='white'
+                    hoverFontcolor='#F09819'
+                    margin='1em 0'
+                    padding='0.25em 1em'
+                  >
+                    My Resume
+                  </Button>
+                </a>
               </DivWrapper>
             </Flex>
             <Flex className='home-hide' width='50%'>

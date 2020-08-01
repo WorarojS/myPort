@@ -37,7 +37,7 @@ function Pages() {
   const count = () => {
     const FbView = Firebase.database()
       .ref()
-      .child("time_stamp_v2_test")
+      .child("time_stamp_v2")
       .child("view")
     FbView.once("value", (snap) => {
       let lastView = Number(snap.val())

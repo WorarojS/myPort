@@ -181,7 +181,12 @@ const Home = () => {
                     About Me
                   </Button>
                 </Link>
-                <a href={Resume} target='_blank' rel='noopener noreferrer'>
+                <a
+                  href={Resume}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  onClick={() => resumeDownload()}
+                >
                   <Button
                     border='1px solid white'
                     bgColor='rgb(0,0,0,0)'
@@ -190,7 +195,7 @@ const Home = () => {
                     hoverFontcolor='#F09819'
                     margin='1em 0'
                     padding='0.25em 1em'
-                    onClick={() => resumeDownload()}
+                    // onClick={() => resumeDownload()}
                   >
                     My Resume
                   </Button>

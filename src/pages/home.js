@@ -14,13 +14,84 @@ import { LottieArt } from "../assets"
 import Lottie from "react-lottie"
 import * as Scroll from "react-scroll"
 import Resume from "../assets/resume2020.pdf"
-
+import Firebase from "../config/firebaseConfig"
+import MobileDetect from "mobile-detect"
 const Home = () => {
   const Link = Scroll.Link
+  const md = new MobileDetect(window.navigator.userAgent)
+  const year = new Date().getFullYear()
+  const month = new Date().getMonth() + 1
+  const day = new Date().getDate()
+  const database = Firebase.database()
+    .ref()
+    .child("resume_download")
+    .child(year)
+    .child(month)
+    .child(day)
   const lottie = {
     loop: true,
     autoplay: true,
     animationData: LottieArt["man.json"],
+  }
+
+  const resumeDownload = (position) => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(showPosition, showError)
+    } else {
+      database.push({
+        date: new Date().toString(),
+        geolocation: "Geolocation is not supported by this browser.",
+        user: md.ua,
+      })
+      console.log("Geolocation is not supported by this browser.")
+    }
+  }
+
+  function showPosition(position) {
+    const latlon = position.coords.latitude + "," + position.coords.longitude
+    database.push({
+      date: new Date().toString(),
+      user: md.ua,
+      geolocation: latlon,
+    })
+  }
+
+  function showError(error) {
+    switch (error.code) {
+      case error.PERMISSION_DENIED:
+        database.push({
+          date: new Date().toString(),
+          user: md.ua,
+          geolocation: "User denied the request for Geolocation.",
+        })
+
+        break
+      case error.POSITION_UNAVAILABLE:
+        database.push({
+          date: new Date().toString(),
+          user: md.ua,
+          geolocation: "Location information is unavailable.",
+        })
+
+        break
+      case error.TIMEOUT:
+        database.push({
+          date: new Date().toString(),
+          user: md.ua,
+          geolocation: "The request to get user location timed out.",
+        })
+
+        break
+      case error.UNKNOWN_ERROR:
+        database.push({
+          date: new Date().toString(),
+          user: md.ua,
+          geolocation: "An unknown error occurred.",
+        })
+
+        break
+      default:
+    }
   }
 
   return (
@@ -110,7 +181,7 @@ const Home = () => {
                     About Me
                   </Button>
                 </Link>
-                <a href={Resume} target='_blank'>
+                <a href={Resume} target='_blank' rel='noopener noreferrer'>
                   <Button
                     border='1px solid white'
                     bgColor='rgb(0,0,0,0)'
@@ -119,6 +190,7 @@ const Home = () => {
                     hoverFontcolor='#F09819'
                     margin='1em 0'
                     padding='0.25em 1em'
+                    onClick={() => resumeDownload()}
                   >
                     My Resume
                   </Button>

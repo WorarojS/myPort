@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/myPort/static/css/main.28966d60.chunk.css",
-    "main.js": "/myPort/static/js/main.41229023.chunk.js",
-    "main.js.map": "/myPort/static/js/main.41229023.chunk.js.map",
+    "main.js": "/myPort/static/js/main.e75882e2.chunk.js",
+    "main.js.map": "/myPort/static/js/main.e75882e2.chunk.js.map",
     "runtime-main.js": "/myPort/static/js/runtime-main.85e2a500.js",
     "runtime-main.js.map": "/myPort/static/js/runtime-main.85e2a500.js.map",
     "static/css/2.7e1fffba.chunk.css": "/myPort/static/css/2.7e1fffba.chunk.css",
-    "static/js/2.c6bc0218.chunk.js": "/myPort/static/js/2.c6bc0218.chunk.js",
-    "static/js/2.c6bc0218.chunk.js.map": "/myPort/static/js/2.c6bc0218.chunk.js.map",
+    "static/js/2.dd65ab90.chunk.js": "/myPort/static/js/2.dd65ab90.chunk.js",
+    "static/js/2.dd65ab90.chunk.js.map": "/myPort/static/js/2.dd65ab90.chunk.js.map",
     "index.html": "/myPort/index.html",
-    "precache-manifest.a8538f9a0723039bb83512852afa38d5.js": "/myPort/precache-manifest.a8538f9a0723039bb83512852afa38d5.js",
+    "precache-manifest.574d1c2e4b69e36fe6115ae144fa49b4.js": "/myPort/precache-manifest.574d1c2e4b69e36fe6115ae144fa49b4.js",
     "service-worker.js": "/myPort/service-worker.js",
     "static/css/2.7e1fffba.chunk.css.map": "/myPort/static/css/2.7e1fffba.chunk.css.map",
     "static/css/main.28966d60.chunk.css.map": "/myPort/static/css/main.28966d60.chunk.css.map",
-    "static/js/2.c6bc0218.chunk.js.LICENSE": "/myPort/static/js/2.c6bc0218.chunk.js.LICENSE",
+    "static/js/2.dd65ab90.chunk.js.LICENSE": "/myPort/static/js/2.dd65ab90.chunk.js.LICENSE",
     "static/media/MovieApi.png": "/myPort/static/media/MovieApi.57d3d467.png",
     "static/media/Project-Mockup.png": "/myPort/static/media/Project-Mockup.e1c87523.png",
     "static/media/SickBoyReact.png": "/myPort/static/media/SickBoyReact.79286096.png",
@@ -37,7 +37,7 @@
     "static/media/python_logo.png": "/myPort/static/media/python_logo.ca2ceddc.png",
     "static/media/reactstrap.png": "/myPort/static/media/reactstrap.68f9d883.png",
     "static/media/res_pj.png": "/myPort/static/media/res_pj.970bc9f4.png",
-    "static/media/resume2020.pdf": "/myPort/static/media/resume2020.506befb8.pdf",
+    "static/media/resume2020.pdf": "/myPort/static/media/resume2020.c7f92d0c.pdf",
     "static/media/sc_logo.png": "/myPort/static/media/sc_logo.1257cefc.png",
     "static/media/sickboySwift.png": "/myPort/static/media/sickboySwift.415e6c45.png",
     "static/media/swift.png": "/myPort/static/media/swift.78fa05da.png",
@@ -48,8 +48,8 @@
   "entrypoints": [
     "static/js/runtime-main.85e2a500.js",
     "static/css/2.7e1fffba.chunk.css",
-    "static/js/2.c6bc0218.chunk.js",
+    "static/js/2.dd65ab90.chunk.js",
     "static/css/main.28966d60.chunk.css",
-    "static/js/main.41229023.chunk.js"
+    "static/js/main.e75882e2.chunk.js"
   ]
 }

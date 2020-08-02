@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect } from "react"
 import Home from "./home"
 import Aboutme from "./aboutme"
 import Skill from "./skill"
@@ -11,7 +11,6 @@ import MobileDetect from "mobile-detect"
 import Project from "./project"
 import { TOKEN } from "../config/api"
 function Pages() {
-  const [getIp, setIp] = useState({})
   const md = new MobileDetect(window.navigator.userAgent)
   const year = new Date().getFullYear()
   const month = new Date().getMonth() + 1
@@ -23,16 +22,20 @@ function Pages() {
     .child(month)
     .child(day)
 
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition, showError)
-  } else {
-    database.push({
-      date: new Date().toString(),
-      geolocation: "Geolocation is not supported by this browser.",
-      ip_address: getIp,
-    })
-    console.log("Geolocation is not supported by this browser.")
-  }
+  useEffect(() => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(showPosition, showError)
+      count()
+    } else {
+      database.push({
+        date: new Date().toString(),
+        geolocation: "Geolocation is not supported by this browser.",
+        user: md.ua,
+      })
+      count()
+      console.log("Geolocation is not supported by this browser.")
+    }
+  })
 
   const count = () => {
     const FbView = Firebase.database()
@@ -73,10 +76,13 @@ function Pages() {
           })
         },
         (error) => {
-          setIp({ error })
+          database.push({
+            date: new Date().toString(),
+            user: md.ua,
+            geolocation: latlon,
+          })
         }
       )
-    count()
   }
   function showError(error) {
     switch (error.code) {
@@ -106,10 +112,15 @@ function Pages() {
               })
             },
             (error) => {
-              setIp({ error })
+              database.push({
+                date: new Date().toString(),
+                user: md.ua,
+                geolocation: "User denied the request for Geolocation.",
+                ip_address: error,
+              })
             }
           )
-        count()
+
         break
       case error.POSITION_UNAVAILABLE:
         fetch(`https://ipinfo.io?token=${TOKEN}`)
@@ -137,10 +148,15 @@ function Pages() {
               })
             },
             (error) => {
-              setIp({ error })
+              database.push({
+                date: new Date().toString(),
+                user: md.ua,
+                geolocation: "Location information is unavailable.",
+                ip_address: error,
+              })
             }
           )
-        count()
+
         break
       case error.TIMEOUT:
         fetch(`https://ipinfo.io?token=${TOKEN}`)
@@ -168,10 +184,15 @@ function Pages() {
               })
             },
             (error) => {
-              setIp({ error })
+              database.push({
+                date: new Date().toString(),
+                user: md.ua,
+                geolocation: "The request to get user location timed out.",
+                ip_address: error,
+              })
             }
           )
-        count()
+
         break
       case error.UNKNOWN_ERROR:
         fetch(`https://ipinfo.io?token=${TOKEN}`)
@@ -199,10 +220,15 @@ function Pages() {
               })
             },
             (error) => {
-              setIp({ error })
+              database.push({
+                date: new Date().toString(),
+                user: md.ua,
+                geolocation: "An unknown error occurred.",
+                ip_address: error,
+              })
             }
           )
-        count()
+
         break
       default:
     }

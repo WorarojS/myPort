@@ -21,7 +21,35 @@ const Experience = () => {
             </Text.Custom>
             <DivWrapper className='headline3' />
           </Flex>
-          <Flex minHeight='300px'>
+          <Flex minHeight='300px' flexDirection="column" alignItems="flex-start">
+          <Flex className='responsive-wrap-flex ' padding='2em 1em'>
+              <Image
+                aos='fade-right'
+                aosDuration='1300'
+                width='7em'
+                source={`${Icon["aitech.png"]}`}
+              />
+              <Flex flexDirection='column' padding='1em' alignItems="flex-start">
+                <Text.H2 aos='fade-left' aosDuration='1200' className='font1'>
+                  2020 - Present
+                </Text.H2>
+                <Text.Custom
+                  aos='fade-left'
+                  aosDuration='1600'
+                  className='exp'
+                  fontSize='1.4em'
+                  space='0.1em'
+                  weight='300'
+                  lineHeight='1.7em'
+                >
+                   AI TECHNOVATION co. ltd. | Frontend React Developer
+                </Text.Custom>
+                <Text.H6 aos='fade-left' aosDuration='1900'>
+                  Independent Developer Responsible for design and develop user interface mockup to click and functionable responsive website using Adobe XD, React ES6
+                  Hooks and Redux with styled-components and Gitlab.
+                </Text.H6>
+              </Flex>
+            </Flex>
             <Flex className='responsive-wrap-flex ' padding='2em 1em'>
               <Image
                 aos='fade-right'
@@ -29,7 +57,7 @@ const Experience = () => {
                 width='7em'
                 source={`${Icon["logoNellika.png"]}`}
               />
-              <Flex flexDirection='column' padding='1em'>
+              <Flex flexDirection='column' padding='1em' alignItems="flex-start">
                 <Text.H2 aos='fade-left' aosDuration='1200' className='font1'>
                   2019 - 2020
                 </Text.H2>

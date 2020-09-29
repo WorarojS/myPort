@@ -231,6 +231,7 @@ const H6Style = props => {
 const CustomStyle = props => {
   const {
     className,
+    width,
     aos,
     aosDuration,
     margin,
@@ -246,6 +247,7 @@ const CustomStyle = props => {
   return (
     <TextCustomStyle
       className={className}
+      width={width}
       data-aos={aos}
       data-aos-duration={aosDuration}
       margin={margin}

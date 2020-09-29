@@ -1,6 +1,15 @@
-import { Images } from "../assets"
+import { Images } from "../assets";
 
 export const projectList = [
+  {
+    image: `${Images["mcp.png"]}`,
+    tag: "React ES6 | Hooks | Firesbase | styled-components",
+    name: "Micro Precision company website",
+    info:
+      "Responsible for redesign from previous outdate website to modern professional website and develop. The project since start redesign till finished takes 15 day including edit and debug",
+    status: "visit website",
+    url: "http://203.154.158.23/",
+  },
   {
     image: `${Images["notfound1.png"]}`,
     tag: "React ES6 | Hooks | Redux | styled-components",
@@ -75,4 +84,4 @@ export const projectList = [
     info:
       " This is Final project in Web development for mobile devices class working on Adobe XD, HTML and CSS. This is a group project for 5 students about redesign and develop an old website to modern and enjoy and clickable userinterface with html and css.",
   },
-]
+];

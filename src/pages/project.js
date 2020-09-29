@@ -14,7 +14,7 @@ const Project = () => {
           </Text.H4>
 
           {projectList
-            .filter((data, index) => index < 2)
+            .filter((data, index) => index < 3)
             .map((data, index) => (
               <Flex
                 className='responsive-wrap-flex '

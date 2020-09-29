@@ -70,9 +70,9 @@ function Pages() {
               ", " +
               result.postal,
 
-            asn: result.asn.name,
-            asn_domain: result.asn.domain,
-            asn_route: result.asn.route,
+            asn: result.hostname,
+            asn_domain: result.org,
+           
           })
         },
         (error) => {
@@ -106,9 +106,9 @@ function Pages() {
                   ", " +
                   result.postal,
 
-                asn: result.asn.name,
-                asn_domain: result.asn.domain,
-                asn_route: result.asn.route,
+                asn: result.hostname,
+                asn_domain: result.org,
+             
               })
             },
             (error) => {
@@ -142,9 +142,8 @@ function Pages() {
                   ", " +
                   result.postal,
 
-                asn: result.asn.name,
-                asn_domain: result.asn.domain,
-                asn_route: result.asn.route,
+                  asn: result.hostname,
+                  asn_domain: result.org,
               })
             },
             (error) => {
@@ -178,9 +177,8 @@ function Pages() {
                   ", " +
                   result.postal,
 
-                asn: result.asn.name,
-                asn_domain: result.asn.domain,
-                asn_route: result.asn.route,
+                  asn: result.hostname,
+                  asn_domain: result.org,
               })
             },
             (error) => {
@@ -214,9 +212,8 @@ function Pages() {
                   ", " +
                   result.postal,
 
-                asn: result.asn.name,
-                asn_domain: result.asn.domain,
-                asn_route: result.asn.route,
+                  asn: result.hostname,
+                  asn_domain: result.org,
               })
             },
             (error) => {

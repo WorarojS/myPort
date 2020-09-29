@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/myPort/static/css/main.28966d60.chunk.css",
-    "main.js": "/myPort/static/js/main.e75882e2.chunk.js",
-    "main.js.map": "/myPort/static/js/main.e75882e2.chunk.js.map",
+    "main.css": "/myPort/static/css/main.3a8a7f2d.chunk.css",
+    "main.js": "/myPort/static/js/main.328f1b18.chunk.js",
+    "main.js.map": "/myPort/static/js/main.328f1b18.chunk.js.map",
     "runtime-main.js": "/myPort/static/js/runtime-main.85e2a500.js",
     "runtime-main.js.map": "/myPort/static/js/runtime-main.85e2a500.js.map",
     "static/css/2.7e1fffba.chunk.css": "/myPort/static/css/2.7e1fffba.chunk.css",
-    "static/js/2.dd65ab90.chunk.js": "/myPort/static/js/2.dd65ab90.chunk.js",
-    "static/js/2.dd65ab90.chunk.js.map": "/myPort/static/js/2.dd65ab90.chunk.js.map",
+    "static/js/2.daa3dcb1.chunk.js": "/myPort/static/js/2.daa3dcb1.chunk.js",
+    "static/js/2.daa3dcb1.chunk.js.map": "/myPort/static/js/2.daa3dcb1.chunk.js.map",
     "index.html": "/myPort/index.html",
-    "precache-manifest.574d1c2e4b69e36fe6115ae144fa49b4.js": "/myPort/precache-manifest.574d1c2e4b69e36fe6115ae144fa49b4.js",
+    "precache-manifest.34b1456aa55fdfaa88e7591601e622a2.js": "/myPort/precache-manifest.34b1456aa55fdfaa88e7591601e622a2.js",
     "service-worker.js": "/myPort/service-worker.js",
     "static/css/2.7e1fffba.chunk.css.map": "/myPort/static/css/2.7e1fffba.chunk.css.map",
-    "static/css/main.28966d60.chunk.css.map": "/myPort/static/css/main.28966d60.chunk.css.map",
-    "static/js/2.dd65ab90.chunk.js.LICENSE": "/myPort/static/js/2.dd65ab90.chunk.js.LICENSE",
+    "static/css/main.3a8a7f2d.chunk.css.map": "/myPort/static/css/main.3a8a7f2d.chunk.css.map",
+    "static/js/2.daa3dcb1.chunk.js.LICENSE": "/myPort/static/js/2.daa3dcb1.chunk.js.LICENSE",
     "static/media/MovieApi.png": "/myPort/static/media/MovieApi.57d3d467.png",
     "static/media/Project-Mockup.png": "/myPort/static/media/Project-Mockup.e1c87523.png",
     "static/media/SickBoyReact.png": "/myPort/static/media/SickBoyReact.79286096.png",
+    "static/media/aitech.png": "/myPort/static/media/aitech.0036d8e2.png",
     "static/media/an1_pj.png": "/myPort/static/media/an1_pj.cebaf94f.png",
     "static/media/android_logo.png": "/myPort/static/media/android_logo.e8d3f488.png",
     "static/media/android_project.png": "/myPort/static/media/android_project.fbc468a9.png",
@@ -28,6 +29,7 @@
     "static/media/gitlab.png": "/myPort/static/media/gitlab.54b1ba40.png",
     "static/media/js_logo.png": "/myPort/static/media/js_logo.0cded3a3.png",
     "static/media/logoNellika.png": "/myPort/static/media/logoNellika.dcf5320a.png",
+    "static/media/mcp.png": "/myPort/static/media/mcp.77fc46c6.png",
     "static/media/nellika.png": "/myPort/static/media/nellika.90a468b6.png",
     "static/media/notfound1.png": "/myPort/static/media/notfound1.29de1535.png",
     "static/media/preview.png": "/myPort/static/media/preview.7e7cf835.png",
@@ -48,8 +50,8 @@
   "entrypoints": [
     "static/js/runtime-main.85e2a500.js",
     "static/css/2.7e1fffba.chunk.css",
-    "static/js/2.dd65ab90.chunk.js",
-    "static/css/main.28966d60.chunk.css",
-    "static/js/main.e75882e2.chunk.js"
+    "static/js/2.daa3dcb1.chunk.js",
+    "static/css/main.3a8a7f2d.chunk.css",
+    "static/js/main.328f1b18.chunk.js"
   ]
 }

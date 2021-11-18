@@ -2,86 +2,108 @@ import { Images } from "../assets";
 
 export const projectList = [
   {
-    image: `${Images["mcp.png"]}`,
-    tag: "React ES6 | Hooks | Firesbase | styled-components",
-    name: "Micro Precision company website",
-    info:
-      "Responsible for redesign from previous outdate website to modern professional website and develop. The project since start redesign till finished takes 15 day including edit and debug",
+    image: `${Images["steam.png"]}`,
+    tag: "Next.js| CMS (Strapi) | styled-components",
+    name: "SMART VALVES INC.",
+    info: "Responsible for redesign from previous outdate website to modern professional website and develop. The project since start redesign till finished takes 15 day including edit and debug",
     status: "visit website",
-    url: "http://203.154.158.23/",
+    url: "https://www.smartsteamtrap.co.th/",
+  },
+  {
+    image: `${Images["tr.png"]}`,
+    tag: "Next.js| CMS (Strapi) | styled-components",
+    name: "Trans.Ad Solutions Co.,Ltd.",
+    info: "Responsible for redesign from previous outdate website to modern professional website and develop. The project since start redesign till finished takes 15 day including edit and debug",
+    status: "visit website",
+    url: "https://transad.co.th/en/home/",
+  },
+  {
+    image: `${Images["int.png"]}`,
+    tag: "Next.js| CMS (Strapi) | styled-components",
+    name: "Interit Decoration Co., Ltd.",
+    info: "Responsible for redesign from previous outdate website to modern professional website and develop. The project since start redesign till finished takes 15 day including edit and debug",
+    status: "visit website",
+    url: "https://www.interit.co.th/",
+  },
+  {
+    image: `${Images["cmd.png"]}`,
+    tag: "Next.js| CMS (Strapi) | styled-components",
+    name: "Civil Master Decor Co., Ltd. ",
+    info: "Responsible for redesign from previous outdate website to modern professional website and develop. The project since start redesign till finished takes 15 day including edit and debug",
+    status: "visit website",
+    url: "http://civilmasterdecor.co.th/th/home/",
+  },
+  {
+    image: `${Images["mcp.png"]}`,
+    tag: "React.js ES6 | Hooks | Firesbase | styled-components",
+    name: "Micro Precision company website",
+    info: "Responsible for redesign from previous outdate website to modern professional website and develop. The project since start redesign till finished takes 15 day including edit and debug",
+    status: "visit website",
+    url: "http://www.mcp.co.th/product",
   },
   {
     image: `${Images["notfound1.png"]}`,
-    tag: "React ES6 | Hooks | Redux | styled-components",
+    tag: "React.js ES6 | Hooks | Redux | styled-components",
     name: "Nellika E-Commerce Platform",
-    info:
-      "Second project as a Frontend intern at Nellika Responsible for Design and Develop an company e-Commerce platform. This is the first time for me to working with Redux and it was amezingly experince",
+    info: "Second project as a Frontend intern at Nellika Responsible for Design and Develop an company e-Commerce platform. This is the first time for me to working with Redux and it was amezingly experince",
     status: "Currently On Process",
     url: "https://nellika.co.th/notfound",
   },
   {
     image: `${Images["nellika.png"]}`,
-    tag: "React ES6 | Hooks | styled-components",
+    tag: "React.js ES6 | Hooks | styled-components",
     name: "Nellika.co Company website",
-    info:
-      "Currently working on Carrier Section. This is my first project since become a part of a Nellika team as a Frontend Intern responsible for design and develop company website working with a professional senior Fullstack Dev.",
+    info: "Currently working on Carrier Section. This is my first project since become a part of a Nellika team as a Frontend Intern responsible for design and develop company website working with a professional senior Fullstack Dev.",
     status: "Visit Website",
     url: "https://nellika.co.th/",
   },
   {
     image: `${Images["preview.png"]}`,
-    tag: "React.js | styled-components | Javascript",
+    tag: "React.js.js | styled-components | Javascript",
     name: "Portfolio",
     info: "Personal portfolio",
   },
-  {
-    image: `${Images["MovieApi.png"]}`,
-    tag: "React.js | styled-components | Javascript",
-    name: "Movie Block",
-    info:
-      " This project is a second personal project to playing around with the api from themoviedb.org work on React.js. This project providing you an information for all of the movie in the world. ",
-  },
-  {
-    image: `${Images["SickBoyReact.png"]}`,
-    tag: "React.js | styled-components | Javascript",
-    name: "SickBoy (React.js)",
-    info:
-      "This project is a first personal project working with API on React.js from Otreeba. provided all of the resource. This project you will take you to the canabis world with all of information that you need to know such as information of Race History, Taste, Effect, of each Strains.  this project is unfinished project so it's not working 100%.",
-  },
-  {
-    image: `${Images["sickboySwift.png"]}`,
-    tag: "Swift",
-    name: "SickBoy (IOS)",
-    info:
-      "This is a Final Project in iOS development and Wearables class at Cornerstone College. This app is about creating local and online(firebase) database in ios device so we created Canabis Library working on Swift with our own Database from Google Firebase that provide all of the resource as JSON type such as news information about each strain or you can even make a review or make you own list and save in your local data app. ",
-  },
+  // {
+  //   image: `${Images["MovieApi.png"]}`,
+  //   tag: "React.js | styled-components | Javascript",
+  //   name: "Movie Block",
+  //   info: " This project is a second personal project to playing around with the api from themoviedb.org work on React.js. This project providing you an information for all of the movie in the world. ",
+  // },
+  // {
+  //   image: `${Images["SickBoyReact.png"]}`,
+  //   tag: "React.js | styled-components | Javascript",
+  //   name: "SickBoy (React.js)",
+  //   info: "This project is a first personal project working with API on React.js from Otreeba. provided all of the resource. This project you will take you to the canabis world with all of information that you need to know such as information of Race History, Taste, Effect, of each Strains.  this project is unfinished project so it's not working 100%.",
+  // },
+  // {
+  //   image: `${Images["sickboySwift.png"]}`,
+  //   tag: "Swift",
+  //   name: "SickBoy (IOS)",
+  //   info: "This is a Final Project in iOS development and Wearables class at Cornerstone College. This app is about creating local and online(firebase) database in ios device so we created Canabis Library working on Swift with our own Database from Google Firebase that provide all of the resource as JSON type such as news information about each strain or you can even make a review or make you own list and save in your local data app. ",
+  // },
 
-  {
-    image: `${Images["an1_pj.png"]}`,
-    tag: "Java  | Android Studio",
-    name: "ICBC Roadtest Exam",
-    info:
-      "This is a midterm project in Java Development class at Cornerstone College. This app is about  Road test Exam pratice providing all of the question from ICBC working on Android devices with multiple question style and timer",
-  },
-  {
-    image: `${Images["android_project.png"]}`,
-    tag: "Java | Android Studio",
-    name: "CraftHunter ",
-    info:
-      "This is a Final team project in Java Development class at Cornerstone College. Most of my job in this project is coding a core of the project. this is about local craftbeer in The great Vancouver Area. This app will provide you an all of the local craftbeer company map, product, price or even order online thru Doordash.co By the way this project is unfinished project so it's not working 100%.",
-  },
-  {
-    image: `${Images["Project-Mockup.png"]}`,
-    tag: "Adobe AI, XD, PS",
-    name: "Design Project ",
-    info:
-      "This is Final duo project in Rich Media Development class at Cornerstone College. Working on Adobe Photoshop, Adobe Illustrator, Adobe XD. This project is about redesign an old website to modern and enjoyable UI with modern technical method.",
-  },
-  {
-    image: `${Images["res_pj.png"]}`,
-    tag: "Html | Css | Adobe Ps | Adobe Ai",
-    name: "Restaurant website Project",
-    info:
-      " This is Final project in Web development for mobile devices class working on Adobe XD, HTML and CSS. This is a group project for 5 students about redesign and develop an old website to modern and enjoy and clickable userinterface with html and css.",
-  },
+  // {
+  //   image: `${Images["an1_pj.png"]}`,
+  //   tag: "Java  | Android Studio",
+  //   name: "ICBC Roadtest Exam",
+  //   info: "This is a midterm project in Java Development class at Cornerstone College. This app is about  Road test Exam pratice providing all of the question from ICBC working on Android devices with multiple question style and timer",
+  // },
+  // {
+  //   image: `${Images["android_project.png"]}`,
+  //   tag: "Java | Android Studio",
+  //   name: "CraftHunter ",
+  //   info: "This is a Final team project in Java Development class at Cornerstone College. Most of my job in this project is coding a core of the project. this is about local craftbeer in The great Vancouver Area. This app will provide you an all of the local craftbeer company map, product, price or even order online thru Doordash.co By the way this project is unfinished project so it's not working 100%.",
+  // },
+  // {
+  //   image: `${Images["Project-Mockup.png"]}`,
+  //   tag: "Adobe AI, XD, PS",
+  //   name: "Design Project ",
+  //   info: "This is Final duo project in Rich Media Development class at Cornerstone College. Working on Adobe Photoshop, Adobe Illustrator, Adobe XD. This project is about redesign an old website to modern and enjoyable UI with modern technical method.",
+  // },
+  // {
+  //   image: `${Images["res_pj.png"]}`,
+  //   tag: "Html | Css | Adobe Ps | Adobe Ai",
+  //   name: "Restaurant website Project",
+  //   info: " This is Final project in Web development for mobile devices class working on Adobe XD, HTML and CSS. This is a group project for 5 students about redesign and develop an old website to modern and enjoy and clickable userinterface with html and css.",
+  // },
 ];
